@@ -16,6 +16,8 @@ radio.onReceivedNumber(function (receivedNumber) {
 radio.setGroup(1)
 let strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Green))
+let str2 = neopixel.create(DigitalPin.P1, 8, NeoPixelMode.RGB)
+str2.showRainbow(1, 360)
 basic.forever(function () {
 	
 })
