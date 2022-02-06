@@ -9,9 +9,9 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 4) {
         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 150)
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 150)
-    } else {
-    	
     }
+    basic.pause(100)
+    maqueen.motorStop(maqueen.Motors.All)
 })
 radio.setGroup(1)
 let strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
